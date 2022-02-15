@@ -1,6 +1,6 @@
 # Binance Toolbox in Java
 
-A collection of examples for `binance-connector-java`.
+A collection of Java examples that connects to the Binance API endpoints based on `binance-connector-java`.
 
 - Github repository: https://github.com/binance/binance-connector-java
 - Maven repository: https://repo1.maven.org/maven2/io/github/binance/binance-connector-java/

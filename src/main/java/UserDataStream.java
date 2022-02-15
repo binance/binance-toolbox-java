@@ -4,6 +4,10 @@ import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * Getting listenkey and establing a user data stream.
+ */
+
 public class UserDataStream {
     private static final Logger logger = LoggerFactory.getLogger(UserDataStream.class);
     public static void main(String[] args) {
@@ -15,8 +19,7 @@ public class UserDataStream {
         logger.info("listenKey:" + listenKey);
 
         wsClient.listenUserStream(listenKey, ((event) -> {
-            System.out.println(event);
-            wsClient.closeAllConnections();
+            logger.info(event);
         }));
     }
 }
