@@ -1,5 +1,5 @@
 import com.binance.connector.client.impl.SpotClientImpl;
-import com.binance.connector.client.impl.WebsocketClientImpl;
+import com.binance.connector.client.impl.WebsocketStreamClientImpl;
 import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 public class UserDataStream {
     private static final Logger logger = LoggerFactory.getLogger(UserDataStream.class);
     public static void main(String[] args) {
-        WebsocketClientImpl wsClient = new WebsocketClientImpl();
+        WebsocketStreamClientImpl wsClient = new WebsocketStreamClientImpl();
         SpotClientImpl spotClient = new SpotClientImpl(PrivateConfig.API_KEY, PrivateConfig.SECRET_KEY);
 
         JSONObject obj = new JSONObject(spotClient.createUserData().createListenKey());
