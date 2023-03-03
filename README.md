@@ -6,6 +6,8 @@ A collection of Java examples that connects to the Binance API endpoints based o
 - Maven repository: https://repo1.maven.org/maven2/io/github/binance/binance-connector-java/
 - Javadoc: https://www.javadoc.io/doc/io.github.binance/binance-connector-java/latest/index.html
 
+Uses `binance-logback` for the logging.
+
 ## Installation
 
 Replace `LATEST_VERSION` with the latest version number and paste the snippet below in `pom.xml`
